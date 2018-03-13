@@ -1,0 +1,12 @@
+# Q1: math exercise (1 pt in total)
+
+## A. (0.5 pt)
+# If the vocal tract length is 15cm, and you discretize it with a 48 kHz sampling rate, 
+# how many discrete sampling periods it does take for a sound wave (340 m/s) to travel the vocal tract?
+#Ans:vocal tract length in meters:15*10^(-2)=0.15m
+#the time that takes to travel to the vocal tract is: t=0.15/340=0.00044117647058823526s
+#the period T=1/f=1/48000
+#so the final answer is t/T=(0.15/340)/T=21.176470588235293
+## B. (0.5 pt)
+# What is the reflection coefficient k when a sound passes from section with area 1cm^2 to 2cm^2?
+#k=(Z2-Z1)/(Z2+Z1), so according to this formula, we get (2-1)/(2+1)=1/3

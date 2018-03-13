@@ -1,0 +1,20 @@
+Exercise4 Report
+Shanshan Wang 272483
+
+## Part 1: Answer the 4 questions and submit as exercise4.txt
+
+# The SPL of a signal at frequency band i is 76 dB. The (minimum) masking threshold value for band i is reported from the psychoacoustic model to be 70 dB.
+
+# Q1) How can you evaluate the signal-to-mask ratio (SMR) for this band? What is the value?(0.25p)
+ANS: SMR = Signal level - min( subband masking threshold ) so according to the formula, we get 76-70=6
+
+# Q2) How many bits you need at least to represent the band's signal values with, if you can assume that the quantization noise decreases 6 dB by adding one bit? (0.25p)
+ANS: SMR/6, so according to the formula, we get 6/6=1 bit      
+
+# Q3) In the next frame (frame length is here 5 ms) the SPL suddenly drops to 40 dB (almost silent).
+Based on the knowledge on the masking effect, explain how do you expect the masking threshold value to change from the last frames value (70dB)? 
+#Is it closer to 40dB or 70dB? You can assume that adjacent bands are also silent. (0.25p)
+ANS: It is near to 70 dB.
+# Q4) How many uniform quantization steps there are with 6 bits? (0.125p) If maximum value is one, what is the step-size? (0.125p)
+ANS: The uniform quantization steps: 2^6 = 64
+The step-size is 1/ quantization steps , which is 1/64
